@@ -1,0 +1,71 @@
+spine1-DC1:
+  ASN: 65100
+  interfaces:
+    loopback0:
+      ipv4: 192.168.101.101
+    ethernet2:
+      ipv4: 192.168.103.1
+    ethernet3:
+      ipv4: 192.168.103.7
+    ethernet4:
+      ipv4: 192.168.103.13
+    ethernet5:
+      ipv4: 192.168.103.19
+    ethernet6:
+      ipv4: 192.168.103.25
+    ethernet7:
+      ipv4: 192.168.103.31
+
+spine2-DC1:
+  ASN: 65100
+  interfaces:
+    loopback0:
+      ipv4: 192.168.101.102
+    ethernet2:
+      ipv4: 192.168.103.3
+    ethernet3:
+      ipv4: 192.168.103.9
+    ethernet4:
+      ipv4: 192.168.103.15
+    ethernet5:
+      ipv4: 192.168.103.21
+    ethernet6:
+      ipv4: 192.168.103.27
+    ethernet7:
+      ipv4: 192.168.103.33
+
+spine3-DC1:
+  ASN: 65100
+  interfaces:
+    loopback0:
+      ipv4: 192.168.101.103
+    ethernet2:
+      ipv4: 192.168.103.5
+    ethernet3:
+      ipv4: 192.168.103.11
+    ethernet4:
+      ipv4: 192.168.103.17
+    ethernet5:
+      ipv4: 192.168.103.23
+    ethernet6:
+      ipv4: 192.168.103.29
+    ethernet7:
+      ipv4: 192.168.103.35
+
+leaf1-DC1:
+  ASN: 65101
+  interfaces:
+    loopback0:
+      ipv4: 192.168.101.11
+    loopback1:
+      ipv4: 192.168.102.11     
+    ethernet3:
+      ipv4: 192.168.103.0
+    ethernet4:
+      ipv4: 192.168.103.2
+    ethernet5:
+      ipv4: 192.168.103.4
+  spine-peers:
+    - 192.168.103.1
+    - 192.168.103.3
+    - 192.168.103.5
